@@ -39,7 +39,7 @@ class App extends Component {
       <div>
         <div className="headerBar">
           <EditToggle update={this.updateEditStatus}/>
-          <ColorChanger update={this.updateColor} />
+          <ColorChanger update={this.updateColor} allowEdit={allowEdit}/>
           { /* Render SizeChanger */ }
           { /* Render FamilyChanger */ }
         </div>

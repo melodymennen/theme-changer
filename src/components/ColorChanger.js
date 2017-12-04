@@ -9,7 +9,8 @@ export default class ColorChanger extends Component {
   }
 
   componentWillReceiveProps(nextProps){
-    this.setState({allowEdit:nextProps.allowEdit})
+      this.setState({allowEdit:nextProps.allowEdit})
+    
   }
 
   render() {
