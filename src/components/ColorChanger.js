@@ -8,7 +8,7 @@ export default class ColorChanger extends Component {
     };
   }
 
-  // componentWillReceiveProps
+  // const {update, allowEdit} = this.props
 
   render() {
     return (
