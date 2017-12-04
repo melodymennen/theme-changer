@@ -7,12 +7,11 @@ export default class ColorChanger extends Component {
       allowEdit: this.props.allowEdit
     };
   }
-
-  // const {update, allowEdit} = this.props
-
+  
   render() {
+    const { update } = this.props
     return (
-      <select className="dropDownContainer">
+      <select className="dropDownContainer" onChange={event => update(event.target.value)}>
         <option value="black"> Black </option>
         <option value="blue"> Blue </option>
         <option value="green"> Green </option>
