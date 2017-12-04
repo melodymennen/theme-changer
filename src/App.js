@@ -29,7 +29,9 @@ class App extends Component {
 
   // updateFamily
 
-  // updateEditStatus
+  updateEditStatus(value){
+    this.setState({allowEdit: value})
+  }
 
   render() {
     return (
