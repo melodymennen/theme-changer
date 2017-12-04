@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 // Components
 import EditToggle from './components/EditToggle';
 import ColorChanger from './components/ColorChanger';
-import SizeChanger from './components/SizeChanger';
-import FamilyChanger from './components/FamilyChanger';
+// import SizeChanger from './components/SizeChanger';
+// import FamilyChanger from './components/FamilyChanger';
 import TextContainer from './components/TextContainer';
 
 class App extends Component {
@@ -39,7 +39,7 @@ class App extends Component {
       <div>
         <div className="headerBar">
           <EditToggle update={this.updateEditStatus}/>
-          <ColorChanger update={this.updateColor} allowEdit={allowEdit}/>
+          <ColorChanger update={this.updateColor} allowEdit={this.state.allowEdit}/>
           { /* Render SizeChanger */ }
           { /* Render FamilyChanger */ }
         </div>
