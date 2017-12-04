@@ -17,11 +17,13 @@ class App extends Component {
       fontFamily: 'monospace',
       allowEdit: 'true'
     };
+
+    this.updateColor = this.updateColor.bind(this);
   }
 
   updateColor(value){
     this.setState({fontColor: value})
-  }
+  };
 
   // updateSize
 
